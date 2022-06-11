@@ -1,16 +1,18 @@
 ### Initialize Linux Home Environment ###
 # Config Files
+## ctags?
 ## vim
 ## tmux
 ## bashrc
 #!/bin/bash
-
 DIR=devenv
 declare -A array
 array[vim]=".vimrc"
 array[tmux]=".tmux.conf"
 array[bashrc]=".bashrc"
- 
+
+echo "init: browsing $HOME"
+
 for i in "${!array[@]}"
 do
     CONFIG=$i
@@ -25,3 +27,4 @@ do
         ln -s $HOME/$DIR/$FILE $FPATH
     fi
 done
+echo "init: complete"
