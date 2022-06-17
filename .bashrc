@@ -31,3 +31,4 @@ export PATH="$HOME/gems/bin:$PATH"
 
 alias ll="ls -alh"
 alias cdr="cd $HOME/arbeid/repo"
+alias cda="cd $HOME/arbeid"
